@@ -1,5 +1,5 @@
 body {
-    background-color: coral;
+    background-color: #efe0b9;
     margin: 0;
     padding: 0;
     font-family: 'Oswald' sans-serif;
@@ -37,10 +37,20 @@ nav a:hover {
     color: #2a2c05;
 }
 
-header {
+.page-header {
     background-color: #b7521e;
     padding: 30px 0;
     text-align: center;
+}
+
+.page-header h1 {
+	font-size: 50px;
+	color: #fff;
+}
+
+.page-header h2 {
+	font-size: 40px;
+	color: #fff;
 }
 
 article {
@@ -54,16 +64,17 @@ article {
 }
 
 aside {
-    width: 29.33%;
+    width: 28.33%;
     height: 100%;
-    float: left;
-    background-color: #e4b04a;
+    float: right;
+    border-left: 1px solid black;
+    background-color: #efe0b9;
     padding: 0 2%;
     display: inline-block;
     vertical-align: top;
 }
 
-footer {
+.page-footer {
     background-color: #b7521e;
     height: 100px;
     position: fixed;
@@ -72,5 +83,81 @@ footer {
     width: 100%;
     color: white;
     text-align: center;
+    margin-top: -200px;
 }
 
+footer p {
+	padding-top: 2em;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 5%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 80%;
+}
+
+/* The circles on the timeline */
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: white;
+  border: 4px solid #FF9F55;
+  top: 15px;
+  border-radius: 50%;
+}
+
+
+/* Place the container to the right */
+.right {
+  left: 5%;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
