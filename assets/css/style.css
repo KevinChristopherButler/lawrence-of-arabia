@@ -1,6 +1,10 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+
 body {
     background-color: #efe0b9;
-    margin: 0;
     padding: 0;
     font-family: 'Oswald' sans-serif;
 }
@@ -57,7 +61,6 @@ article {
     background-color: #efe0b9;
     padding: 0 2%;
     width: 62.66%;
-    height: 100%;
     float: left;
     display: inline-block;
     vertical-align: top;
@@ -65,7 +68,6 @@ article {
 
 aside {
     width: 28.33%;
-    height: 100%;
     float: right;
     border-left: 1px solid black;
     background-color: #efe0b9;
@@ -76,18 +78,14 @@ aside {
 
 .page-footer {
     background-color: #b7521e;
-    height: 100px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    color: white;
     text-align: center;
-    margin-top: -200px;
-}
-
-footer p {
-	padding-top: 2em;
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+    height: 100px;
+    margin-top: -100px;
 }
 
 /* The actual timeline (the vertical ruler) */
@@ -95,6 +93,14 @@ footer p {
   position: relative;
   max-width: 100%;
   margin: 0 auto;
+}
+
+.page-content {
+    min-height: 100%;
+}
+
+.page-content-inside {
+    padding-bottom: 100px;
 }
 
 /* The actual timeline (the vertical ruler) */
