@@ -30,6 +30,10 @@ I am inclined to leave this alone since the section is contained within an artic
 - CSS
 No errors were found when passing through the official (Jigsaw) validator.
 
+- Accessibility
+Lighthouse showed an accessibility score of 100.
+<img src="./assets/images/lighthouse.PNG" alt="Lighthouse report">
+
 ### Unfixed Bugs
 
 - Sticky footer 
