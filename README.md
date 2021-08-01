@@ -5,6 +5,8 @@ It asks what happened that caused him to withdraw completely from a very public 
 Of course, answers are in short supply, but perhaps even 85 years after his death, the
 truth is still out there.
 
+<img src="./assets/images/landingPage.PNG" alt="Image of the landing page">
+
 The site is aimed at the interested viewer - interested, that is, in people and events in world and military history. 
 It will also be of interest to students of psychology.
 
@@ -16,6 +18,10 @@ particular aspects of his life and career. The pages are linked via a menu bar.
 - The structure of each page is identical: a header and footer area sandwich the main content area. The content area is
 divided vertically on a two-thirds:one-third basis, with the larger space holding the main content and the smaller space
 containing subsidiary information.
+- The landing page includes a timeline showing the main events from Lawrence's life.
+
+<img src="./assets/images/timeline.PNG" alt="Image of the timeline">
+
 - The site is fully responsive.
 
 
